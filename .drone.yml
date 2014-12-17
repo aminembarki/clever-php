@@ -1,6 +1,5 @@
-image: clever/drone-php:5.4
+image: clever/drone-php:5.5
 script:
-  - curl -sS https://getcomposer.org/installer | php
   - php composer.phar install --prefer-dist --no-interaction --no-progress
   - ./vendor/bin/phpunit
 notify:
