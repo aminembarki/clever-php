@@ -1,4 +1,4 @@
-image: clever/drone-php:5.5-test
+image: etna/drone-php
 script:
   - ./vendor/bin/phpunit
 notify:
