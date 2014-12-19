@@ -1,5 +1,6 @@
 image: clever/drone-php:5.5-test
 script:
+  - php composer.phar install --prefer-dist --no-interaction --no-progress
   - ./vendor/bin/phpunit
 notify:
   email:
